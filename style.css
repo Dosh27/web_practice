@@ -1,0 +1,163 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0e1014;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #b8b8b8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00bcd4;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+header h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+/* HERO */
+#home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  background: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  ), url("desk.jpg") center / cover no-repeat;
+}
+
+#home h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+#home h3 {
+  font-size: 18px;
+  color: #00bcd4;
+  margin: 10px 0 30px;
+}
+
+#home a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 12px 28px;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+}
+
+#home a:first-of-type {
+  background-color: #00bcd4;
+  color: #000;
+}
+
+/* ABOUT */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px;
+}
+
+#about img {
+  width: 300px;
+  border-radius: 6px;
+}
+
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#about p {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+/* RESUME */
+#resume {
+  background-color: #12141a;
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+#resume h3 {
+  color: #00bcd4;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#resume ul {
+  list-style: none;
+}
+
+#resume li {
+  margin-bottom: 12px;
+  color: #cfcfcf;
+}
+
+/* PORTFOLIO */
+#portfolio {
+  padding: 80px;
+}
+
+#portfolio h2 {
+  font-size: 32px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #222;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  #home {
+    padding-left: 40px;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #resume {
+    grid-template-columns: 1fr;
+  }
+}
